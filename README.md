@@ -1,0 +1,1 @@
+# link-for-copy-to-clipboard
