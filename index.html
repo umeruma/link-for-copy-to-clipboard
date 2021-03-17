@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy to Clipboard</title>
+</head>
+<body>
+  <main>
+    <ul>
+      <li><textarea id="copyTarget">HOGE HOGE</textarea><button id="copyText">Copy "HOGEHOGE"</button></li>
+    </ul>
+  </main>
+  <script>
+    document.getElementById('copyText').onclick = () => {
+      var text = document.getElementById('copyTarget').value;
+      navigator.clipboard.writeText(text).then(e => {
+          alert('Error. Maybe your browser isn't supported.');
+      });
+    };
+  </script>
+</body>
+</html>
