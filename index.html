@@ -14,11 +14,11 @@
   </main>
   <script>
     document.getElementById('copyText').onclick = () => {
-      var text = document.getElementById('copyTarget').value;
+      var text = document.getElementById('copyTarget').value
       navigator.clipboard.writeText(text).then(e => {
-          alert('Error. Maybe your browser isn't supported.');
-      });
-    };
+          alert('Error. Maybe your browser is not supported.')
+      })
+    }
   </script>
 </body>
 </html>
